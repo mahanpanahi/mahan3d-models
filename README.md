@@ -8,12 +8,6 @@
 
 A curated archive of 3D models and digital creations by **Mahan Panahi** — built with a focus on clean topology, visual accuracy, detail, and practical digital use.
 
-<p>
-  <a href="#-english">English</a>
-  &nbsp;•&nbsp;
-  <a href="#-فارسی">فارسی</a>
-</p>
-
 <br>
 
 ![Models](https://img.shields.io/badge/3D%20Models-24%2B-black?style=for-the-badge)

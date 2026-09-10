@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MAHAN 3D Studio — Portfolio & marketplace for premium 3D models."
+    />
+    <meta name="theme-color" content="#edf1f5" />
+    <title>MAHAN 3D — Model Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/images/logo.png" />
+  </head>
+  <body>
+    <header class="nav-wrap">
+      <nav class="nav container">
+        <a class="brand" href="#top"
+          ><span class="brand-mark">MHN</span
+          ><span><strong>MAHAN</strong><small>3D STUDIO</small></span></a
+        >
+        <div class="nav-links">
+          <a href="#models">مدل‌ها</a><a href="#studio">استودیو</a
+          ><a href="#contact">ارتباط</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle">
+          <span id="themeIcon"><i class="fal fa-sun"></i></span><span>تم</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero container">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span> DIGITAL MODELING / 2026</div>
+          <h1>هر سطح، هر خط،<br /><em>با دقت طراحی شده.</em></h1>
+          <p>
+            مجموعه‌ای از مدل‌های سه‌بعدی با تمرکز بر فرم، جزئیات و بهینه‌سازی
+            برای استفاده در بازی، رندر، تبلیغات و پروژه‌های دیجیتال.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#models"
+              >مشاهده پروژه ها <b><i class="fad fa-arrow-down"></i></b></a
+            ><a class="text-link" href="#contact">سفارش مدل اختصاصی <i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <div class="hero-meta">
+            <div><strong>24+</strong><span>مدل آماده</span></div>
+            <div><strong>04</strong><span>دسته بندی اصلی</span></div>
+            <div><strong>100%</strong><span>ساخته شده از صفر</span></div>
+          </div>
+        </div>
+        <div class="hero-showcase reveal delay-1">
+          <div class="hero-image">
+            <div class="hero-placeholder">
+              <span>3D</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="models">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow"><span></span> MODEL LIBRARY</div>
+            <h2>مدل ها و پروژه ها</h2>
+          </div>
+          <p>برای مشاهده جزئیات، قیمت و وضعیت هر مدل روی کارت کلیک کنید.</p>
+        </div>
+        <div class="toolbar">
+          <label class="search"
+            ><span><i class="fad fa-search"></i></span
+            ><input
+              id="searchInput"
+              type="search"
+              placeholder="جستجوی مدل، خودرو یا قطعه..."
+          /></label>
+          <div class="filters" id="filters">
+            <button class="filter active" data-category="all">همه</button>
+            <button class="filter" data-category="cars">ماشین</button>
+            <button class="filter" data-category="engines">موتور و اسکلت بدنه</button>
+            <button class="filter" data-category="racks">باربند و اتاقک بار </button>
+            <button class="filter" data-category="wheels">رینگ</button>
+            <button class="filter" data-category="spoilers">اسپویلر</button>
+          </div>
+        </div>
+        <div class="grid" id="productGrid"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <div>⌕</div>
+          <h3>نتیجه‌ای پیدا نشد</h3>
+          <p>عبارت جستجو یا دسته‌بندی را تغییر دهید.</p>
+        </div>
+      </section>
+
+      <section class="section container studio" id="studio">
+        <div class="studio-main">
+          <div class="eyebrow"><span></span> THE STUDIO</div>
+          <h2>طراحی فقط درباره‌ی<br /><em>زیبایی نیست.</em></h2>
+          <p>
+            تمرکز این استودیو روی مدل‌سازی تمیز، تناسبات دقیق و جزئیات
+            قابل‌اعتماد است؛ تا هر مدل هم در تصویر حرفه‌ای باشد و هم از نظر فنی
+            قابل استفاده.
+          </p>
+          <p>
+            هر مدل با توجه به توپولوژی، سیلوئت، تناسبات و کاربرد نهایی ساخته
+            می‌شود. هدف، رسیدن به تعادلی بین کیفیت بصری و ساختار فنی تمیز است؛
+            مدلی که هم خوب دیده شود و هم خوب کار کند.
+          </p>
+          <div class="principles">
+            <div>
+              <b>01</b><strong>Clean topology</strong
+              ><span>ساختار مرتب و قابل ویرایش</span>
+            </div>
+            <div>
+              <b>02</b><strong>Visual accuracy</strong
+              ><span>تمرکز روی فرم و تناسبات</span>
+            </div>
+            <div>
+              <b>03</b><strong>Game ready</strong
+              ><span>بهینه‌سازی برای پروژه دیجیتال</span>
+            </div>
+          </div>
+        </div>
+        <div class="studio-side">
+          <div class="big-mark">MAHAN<span>3D</span></div>
+          <p>MODELING<br />DETAIL<br />CRAFT</p>
+          <br>
+          <p dir="rtl" style="font-family: Vazirmatn;">آپدیت شده در شهریور 1405</p>
+        </div>
+      </section>
+
+      <section class="section container contact" id="contact">
+        <div class="contact-card">
+          <div>
+            <div class="eyebrow"><span></span> LET'S BUILD</div>
+            <h2>پروژه‌ای در ذهن داری؟</h2>
+            <p>
+              برای سفارش مدل اختصاصی، همکاری یا دریافت اطلاعات بیشتر پیام بده.
+            </p>
+          </div>
+          <!-- <div class="contact-links">
+            <a href="https://t.me/mhn_pn" target="_blank" rel="noreferrer">
+              <small>Telegram</small><b>@MHN_PN <i class="fab fa-telegram"></i></b>
+            </a>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <span>© 2026 MAHAN 3D STUDIO</span><span>BUILT FOR DIGITAL CRAFT</span>
+    </footer>
+
+    <dialog id="modal" class="modal">
+      <button class="modal-close" id="modalClose">×</button>
+      <div id="modalGallery" class="modal-gallery"></div>
+      <div class="modal-content">
+        <div id="modalCategory" class="eyebrow"></div>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <div id="modalSpecs" class="detail-grid"></div>
+        <div class="modal-bottom">
+          <div><small>قیمت</small><strong id="modalPrice"></strong></div>
+          <div><small>وضعیت</small><strong id="modalStock"></strong></div>
+          <a href="#contact" class="btn btn-primary" id="modalContact"
+            >سفارش / اطلاعات بیشتر</a
+          >
+        </div>
+      </div>
+    </dialog>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

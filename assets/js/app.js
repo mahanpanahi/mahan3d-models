@@ -587,6 +587,7 @@ function render() {
     .forEach((c) => (c.onclick = () => openModal(+c.dataset.id)));
 }
 function openModal(id) {
+  document.body.classList.add("modal-open");
   const p = products.find((x) => x.id === id);
   if (!p) return;
   document.getElementById("modalCategory").textContent = p.categoryLabel;
@@ -610,10 +611,18 @@ function openModal(id) {
     .join("");
   document.getElementById("modal").showModal();
 }
-document.getElementById("modalClose").onclick = () =>
+document.getElementById("modalClose").onclick = () => {
   document.getElementById("modal").close();
+  document.body.classList.remove("modal-open");
+};
 document.getElementById("modal").addEventListener("click", (e) => {
-  if (e.target.id === "modal") e.target.close();
+  if (e.target.id === "modal") {
+    e.target.close();
+    document.body.classList.remove("modal-open");
+  }
+});
+document.getElementById("modal").addEventListener("close", () => {
+  document.body.classList.remove("modal-open");
 });
 search.oninput = render;
 filters.onclick = (e) => {
@@ -646,3 +655,5 @@ toggle.onclick = () => {
   sync();
 };
 render();
+
+

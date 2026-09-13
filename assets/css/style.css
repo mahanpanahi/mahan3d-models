@@ -701,12 +701,17 @@ h1, h2, h3, p {
     background: var(--surface);
     color: var(--text);
     box-shadow: 0 30px 90px rgba(0, 0, 0, .3);
-    overflow: hidden
+    overflow: hidden;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+body.modal-open {
+    overflow: hidden;
 }
 
 .modal::backdrop {
     background: rgba(5, 7, 10, .62);
-    backdrop-filter: blur(8px)
+    backdrop-filter: blur(8px);
 }
 
 .modal-close {
@@ -794,6 +799,25 @@ h1, h2, h3, p {
 
 .modal-bottom .btn {
     margin-right: auto
+}
+
+
+.modal {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) transparent;
+}
+
+.modal::-webkit-scrollbar {
+    width: 4px;
+}
+
+.modal::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.modal::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 999px;
 }
 
 .reveal {
